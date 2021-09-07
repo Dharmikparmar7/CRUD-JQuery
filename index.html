@@ -62,7 +62,7 @@
 
         function displayStudents(){
             $.ajax({
-                url:"http://arjunbala.com/DemoAPI/getAllStudents.php",
+                url:"https://arjunbala.com/DemoAPI/getAllStudents.php",
                 type:"POST",
                 dataType:"json"
             }).done(function(json){
@@ -83,7 +83,7 @@
         function insertStudent(name)
         {
             $.ajax({
-                url:"http://arjunbala.com/DemoAPI/insertStudent.php",
+                url:"https://arjunbala.com/DemoAPI/insertStudent.php",
                 type:"POST",
                 data:{
                     StudentName:name
@@ -100,7 +100,7 @@
             var id = $(object).parent().parent().get(0).id;
 
             $.ajax({
-                url:"http://arjunbala.com/DemoAPI/deleteStudent.php",
+                url:"https://arjunbala.com/DemoAPI/deleteStudent.php",
                 type:"POST",
                 data:{StudentID:id},
                 dataType:"html"
@@ -111,6 +111,3 @@
         }
     </script>
 </body>
-
-<!-- http://arjunbala.com/DemoAPI/ -->
-
